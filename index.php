@@ -9,7 +9,7 @@
                window.location.href = "registraUtente.php";
             }
             function acquistaProdotto(id){
-                window.location.href = "acquistaProdotto.php?id="+id;
+                window.location.href = "acquistaProdotto.php?idProdotto="+id;
             }
             function inserisciProdotto(){
                 window.location.href = "inserisciProdotto.php";
@@ -75,6 +75,7 @@
                     SELECT nome,cognome,email,modello,marca,data 
                     FROM acquisti,utenti,prodotti 
                     WHERE acquisti.idUtente=utenti.id AND acquisti.idProdotto=prodotti.id
+                    ORDER BY acquisti.data DESC
                 ";
                 $acquisti=mysqli_query($conn, $sql);
                 foreach ($acquisti as $row) {

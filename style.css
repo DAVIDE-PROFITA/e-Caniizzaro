@@ -6,8 +6,8 @@ th{
 td{
     background-color:transparent;
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     margin:4px;
 }
 
@@ -83,7 +83,6 @@ div.relevant{
     justify-content: center;
     align-items: center;
 }
-
 
 .centered{
     margin-left: 0;
